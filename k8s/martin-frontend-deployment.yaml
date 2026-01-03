@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ghcr.io/billare/guestbook-frontend:latest
+          image: ghcr.io/billare/redis
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
