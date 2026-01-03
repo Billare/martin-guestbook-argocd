@@ -167,7 +167,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: ghcr.io/billare/guestbook-backend:latest
+          image: ghcr.io/billare/guestbook
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
