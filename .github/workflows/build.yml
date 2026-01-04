@@ -3,6 +3,10 @@ name: Build and push images
 on:
   push:
     branches: ["main"]
+    paths:
+      - "backend/**"
+      - "frontend/**"
+      - ".github/workflows/**"
 
 jobs:
   build-and-deploy:
