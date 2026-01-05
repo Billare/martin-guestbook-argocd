@@ -38,7 +38,7 @@ spec:
               cpu: 100m
               memory: 256Mi
             limits:
-              cpu: 400m
+              cpu: 150m
               memory: 512Mi
 
           env:
@@ -118,7 +118,7 @@ spec:
               cpu: 50m
               memory: 128Mi
             limits:
-              cpu: 200m
+              cpu: 150m
               memory: 256Mi
 
           env:
