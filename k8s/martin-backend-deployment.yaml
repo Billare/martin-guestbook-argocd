@@ -36,10 +36,10 @@ spec:
           resources:
             requests:
               cpu: 10m
-              memory: 20Mi
+              memory: 30Mi
             limits:
               cpu: 20m
-              memory: 30Mi
+              memory: 40Mi
 
           env:
             - name: POSTGRESQL_USER
