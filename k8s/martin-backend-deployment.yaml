@@ -35,11 +35,11 @@ spec:
 
           resources:
             requests:
-              cpu: 20m
-              memory: 32Mi
+              cpu: 10m
+              memory: 20Mi
             limits:
-              cpu: 100m
-              memory: 64Mi
+              cpu: 20m
+              memory: 30Mi
 
           env:
             - name: POSTGRESQL_USER
@@ -115,11 +115,11 @@ spec:
 
           resources:
             requests:
-              cpu: 20m
-              memory: 32Mi
+              cpu: 10m
+              memory: 20Mi
             limits:
-              cpu: 100m
-              memory: 64Mi
+              cpu: 20m
+              memory: 30Mi
 
           env:
             - name: REDIS_PASSWORD
@@ -174,10 +174,10 @@ spec:
 
           resources:
             requests:
-              cpu: 20m
+              cpu: 10m
               memory: 64Mi
             limits:
-              cpu: 100m
+              cpu: 20m
               memory: 64Mi
 
           env:
