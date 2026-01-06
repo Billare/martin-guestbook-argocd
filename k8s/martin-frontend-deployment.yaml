@@ -23,11 +23,11 @@ spec:
 
           resources:
             requests:
-              cpu: 25m
-              memory: 64Mi
+              cpu: 20m
+              memory: 32Mi
             limits:
               cpu: 100m
-              memory: 128Mi
+              memory: 64Mi
 ---
 apiVersion: v1
 kind: Service
