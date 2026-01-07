@@ -16,7 +16,7 @@ kind: Deployment
 metadata:
   name: martin-postgres
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: martin-guestbook
@@ -96,7 +96,7 @@ kind: Deployment
 metadata:
   name: martin-redis
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: martin-guestbook
