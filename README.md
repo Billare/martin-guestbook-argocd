@@ -59,7 +59,7 @@ Argo CD automatically detects drift and re-applies the configuration.
 
 ---
 
-## 📌 Namespace & Naming Convention
+## Namespace & Naming Convention
 
 Because the namespace is shared with classmates, all resources are prefixed with:
 
@@ -81,7 +81,7 @@ Examples:
 
 ---
 
-## 🔧 Deployment (Argo CD)
+## Deployment (Argo CD)
 
 1. Add a new Argo CD Application pointing to this repo
 2. Set the path to:
@@ -93,32 +93,3 @@ k8s/
 4. Retrieve the route:
 
 ```bash
-oc get route martin-frontend
-
-Open the URL in a browser (certificate warnings are acceptable).
- Assignment Requirements — Status
-Requirement	Status
-Guestbook reachable via URL	✅ Passed
-Entries persist after refresh/incognito	✅ Passed
-Scaling replicas via YAML applies via Argo CD	✅ Passed
-Image rebuilds on code change using GitHub Actions	✅ Passed
-Deployment changes auto-synced by Argo CD	✅ Passed
- Implementation Notes
-
-    All pods include CPU & memory requests/limits to respect quota
-
-    PVC sizes are configured to avoid storage conflicts
-
-    Backend & frontend communicate using prefixed service names
-
-    GitOps ensures configuration lives in version control
-
-   Possible Future Improvements
-
-    Add automatic image tag tracking (Argo Image Updater)
-
-    Add liveness & readiness probes
-
-    Store secrets using Sealed Secrets or Vault
-
-    Add integration testing to CI stage
