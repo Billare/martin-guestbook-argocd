@@ -12,3 +12,8 @@ spec:
     targetRevision: HEAD
   sources: []
   project: grupp3
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      enabled: true
