@@ -1,19 +1,13 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: martin-guestbook-argocd
-spec:
-  destination:
-    namespace: grupp3
-    server: kubernetes.default.svc
-  source:
-    path: k8s
-    repoURL: https://github.com/Billare/martin-guestbook-argocd.git
-    targetRevision: HEAD
-  sources: []
-  project: grupp3
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-      enabled: true
+project: default
+source:
+  repoURL: https://github.com/Billare/martin-guestbook-argocd.git
+  path: k8s
+  targetRevision: HEAD
+destination:
+  server: https://kubernetes.default.svc
+  namespace: grupp3
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
+    enabled: true
